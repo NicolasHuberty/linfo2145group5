@@ -51,16 +51,7 @@ services:     # list all services for your application
       restart_policy:
         condition: on-failure
     networks: [ "scapp-net" ]
-  front-service:
-    #Front-end service
-    image: nicolashuberty/scapp-front:latest
-    ports: ["3002:80"]
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-    networks: [ "scapp-net" ]
-  
+ 
   # server that listens HTTP requests
   auth-service:
     image: nicolashuberty/scapp-auth:latest
