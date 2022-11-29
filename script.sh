@@ -5,9 +5,9 @@ wget https://raw.githubusercontent.com/NicolasHuberty/linfo2145group5/main/scapp
 temp=$(docker swarm init --advertise-addr `curl ifconfig.me` | grep -n "docker swarm join --token" | cut -b 7-)
 echo ""
 echo "You have to copy this in worker and then go back here"
-echo"-------------------------------------------------------------------------"
+echo "-------------------------------------------------------------------------"
 echo "docker swarm leave & "${temp} "--advertise-addr \`curl ifconfig.me\`"
-echo"-------------------------------------------------------------------------"
+echo "-------------------------------------------------------------------------"
 echo ""
 echo "PRESS q when the command above is done"
 while : ; do
