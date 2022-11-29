@@ -8,7 +8,7 @@ echo "You have to copy this in worker and then go back here"
 echo"-------------------------------------------------------------------------"
 echo "docker swarm leave & "${temp} "--advertise-addr \`curl ifconfig.me\`"
 echo"-------------------------------------------------------------------------"
-
+echo ""
 echo "PRESS q when the command above is done"
 while : ; do
 read -n 1 k <&1
